@@ -1,10 +1,16 @@
 // file: script.js
 
-// Daftar siswa mirip dengan struktur Python dictionary
+// Daftar siswa 
 const daftarSiswa = {
-    10: { nomor_induk: "10", nama: "Budi" },
-    20: { nomor_induk: "20", nama: "Totok" },
-    30: { nomor_induk: "30", nama: "Bintoro" }
+    1: { nomor_induk: "1", nama: "Budhi Harto" },
+    2: { nomor_induk: "2", nama: "Totok Bin Alubdi" },
+    3: { nomor_induk: "3", nama: "Bintoro Bukhiri Ahmad" },
+    4: { nomor_induk: "4", nama: "Ahmad Samsul Faisal Hakim" },
+    5: { nomor_induk: "5", nama: "Chiheng Goheng" },
+    6: { nomor_induk: "6", nama: "Segho Ghoreng" },
+    7: { nomor_induk: "7", nama: "Axeno bin mahmud" },
+    8: { nomor_induk: "8", nama: "SUlastri saiful" },
+    9: { nomor_induk: "9", nama: "Mr. Mukhsinin" }
 };
 
 function tampilkanForm(kelas) {
@@ -28,6 +34,6 @@ function tandaiKehadiran() {
     if (siswa) {
         messageDiv.textContent = `${siswa.nama} telah hadir di Kelas ${kelas}.`;
     } else {
-        messageDiv.textContent = "Identitas siswa tidak valid.";
+        messageDiv.textContent = "Identitas siswa tidak valid. Masukan Identitas yang benar.";
     }
 }
