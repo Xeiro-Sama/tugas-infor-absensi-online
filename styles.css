@@ -17,7 +17,7 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: #a6e5ec; /* Latar belakang putih untuk konten utama */
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan untuk konten utama */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #dee2e6;
