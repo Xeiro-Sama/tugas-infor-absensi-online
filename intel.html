@@ -1,53 +1,30 @@
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-    .container {
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 500px;
-    }
-    h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-        color: #333;
-    }
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 16px;
-        color: #555;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-    input[type="submit"] {
-        background-color: #5cb85c;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background-color: #4cae4c;
-    }
-    .message {
-        margin-top: 20px;
-        font-size: 16px;
-        color: #5bc0de;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Online</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Absensi Online</h1>
+        <div id="menu">
+            <button onclick="tampilkanForm('1')">Kelas 1</button>
+            <button onclick="tampilkanForm('2')">Kelas 2</button>
+            <button onclick="tampilkanForm('3')">Kelas 3</button>
+            <button onclick="keluar()">Keluar</button>
+        </div>
+        
+        <div id="form-container" style="display:none;">
+            <h2>Masukkan Identitas Siswa</h2>
+            <label for="nomor-induk">Nomor Induk:</label>
+            <input type="text" id="nomor-induk" placeholder="Masukkan nomor induk">
+            <button onclick="tandaiKehadiran()">Kirim</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>
