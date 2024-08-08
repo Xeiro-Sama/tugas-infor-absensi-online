@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9ecef;
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
     margin: 0;
     padding: 0;
     color: #495057;
@@ -13,7 +13,7 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #ffffff; /* Latar belakang putih untuk konten utama */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #dee2e6;
@@ -44,42 +44,4 @@ button:hover {
     transform: scale(1.05);
 }
 
-button:active {
-    background-color: #003d7a;
-}
-
-#form-container {
-    margin-top: 20px;
-}
-
-input[type="text"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-    resize: vertical;
-    box-sizing: border-box;
-}
-
-#message {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #28a745;
-    text-align: center;
-}
-
-#message {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #5bc0de;
-}
+button:
