@@ -10,7 +10,9 @@ const daftarSiswa = {
     6: { nomor_induk: "6", nama: "Segho Ghoreng" },
     7: { nomor_induk: "7", nama: "Axeno bin mahmud" },
     8: { nomor_induk: "8", nama: "SUlastri saiful" },
-    9: { nomor_induk: "9", nama: "Mr. Mukhsinin" }
+    9: { nomor_induk: "9", nama: "Mr. Mukhsinin" },
+    10: { nomor_induk: "10", nama: "Siva Novia S." },
+    11: { nomor_induk: "11", nama: "A Exha Raindhiendra." }
 };
 
 function tampilkanForm(kelas) {
