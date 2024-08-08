@@ -54,7 +54,7 @@
         .message {
             margin-top: 20px;
             font-size: 16px;
-            color: #d9534f;
+            color: #5bc0de;
         }
     </style>
 </head>
@@ -70,24 +70,3 @@
 
             <input type="submit" value="Kirim Absensi">
         </form>
-        <div class="message" id="message"></div>
-    </div>
-
-    <script>
-        document.getElementById('attendanceForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Ambil nilai dari form
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-
-            // Tampilkan pesan konfirmasi
-            var messageDiv = document.getElementById('message');
-            messageDiv.textContent = `Terima kasih, ${name}! Absensi Anda telah dikirim.`;
-            messageDiv.style.color = '#5bc0de'; // Warna pesan konfirmasi
-
-            // Di sini Anda dapat menambahkan kode untuk mengirim data ke server
-        });
-    </script>
-</body>
-</html>
