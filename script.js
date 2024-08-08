@@ -12,17 +12,22 @@ const daftarSiswa = {
     8: { nomor_induk: "8", nama: "SUlastri saiful" },
     9: { nomor_induk: "9", nama: "Mr. Mukhsinin" },
     10: { nomor_induk: "10", nama: "Siva Novia S." },
-    11: { nomor_induk: "11", nama: "A Exha Raindhiendra." }
+    11: { nomor_induk: "11", nama: "A Exha Raindhiendra." },
+    12: { nomor_induk: "12", nama: "Stela Geraldine" },
+    13: { nomor_induk: "13", nama: "M. Fathur Rizki B." },
+    14: { nomor_induk: "14", nama: "Stepen Hawking" }
 };
 
 function tampilkanForm(kelas) {
     document.getElementById('form-container').style.display = 'block';
     document.getElementById('message').textContent = '';
     document.getElementById('form-container').setAttribute('data-kelas', kelas);
+    document.getElementById('menu').style.display = 'none'; // Sembunyikan menu
 }
 
 function keluar() {
     document.getElementById('form-container').style.display = 'none';
+    document.getElementById('menu').style.display = 'block'; // Tampilkan menu
     document.getElementById('message').textContent = 'Selesai.';
 }
 
@@ -36,6 +41,13 @@ function tandaiKehadiran() {
     if (siswa) {
         messageDiv.textContent = `${siswa.nama} telah hadir di Kelas ${kelas}.`;
     } else {
-        messageDiv.textContent = "Identitas siswa tidak valid. Masukan Identitas yang benar.";
+        messageDiv.textContent = "Identitas siswa tidak valid.";
     }
+    
+    // Kembali ke menu setelah 2 detik
+    setTimeout(() => {
+        document.getElementById('form-container').style.display = 'none';
+        document.getElementById('menu').style.display = 'block';
+        document.getElementById('nomor-induk').value = ''; // Kosongkan input
+    }, 2000);
 }
